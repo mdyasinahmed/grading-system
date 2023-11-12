@@ -51,6 +51,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel4.setText("Your Grade:");
 
+        gradeTF.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         gradeTF.setText(" ");
         gradeTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,6 +60,7 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         averageTF.setBackground(new java.awt.Color(204, 204, 255));
+        averageTF.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         averageTF.setForeground(new java.awt.Color(0, 0, 255));
         averageTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,7 +69,13 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         fgTF.setBackground(new java.awt.Color(204, 255, 204));
+        fgTF.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         fgTF.setForeground(new java.awt.Color(0, 102, 0));
+        fgTF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fgTFActionPerformed(evt);
+            }
+        });
 
         jButton1.setBackground(new java.awt.Color(0, 153, 51));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -106,11 +114,11 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGap(143, 143, 143)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addGroup(layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(8, 8, 8)
@@ -147,7 +155,7 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jButton1)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
-                .addContainerGap(142, Short.MAX_VALUE))
+                .addContainerGap(144, Short.MAX_VALUE))
         );
 
         pack();
@@ -198,6 +206,10 @@ public class NewJFrame extends javax.swing.JFrame {
         averageTF.setText("");
         gradeTF.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void fgTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fgTFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fgTFActionPerformed
 
     /**
      * @param args the command line arguments
